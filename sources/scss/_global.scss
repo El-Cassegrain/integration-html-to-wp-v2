@@ -30,6 +30,21 @@ body {
     @include btn-outline-primary
 }
 
+.subtitle-h1 {
+    font-size: 1.25rem; //BS h5 font-size
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 0.15rem;
+}
+
+.subtitle-h2 {
+    font-size: 1.25rem; //BS h5 font-size
+    font-weight: 300;
+    opacity: 0.5;
+    margin-top: 0;
+}
+
 #offcanvas-open-btn {
     top: 0.25rem;
     z-index: 100;
