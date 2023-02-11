@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Urbanist:wght@200;400;500;600;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Urbanist:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- BS icons -->
@@ -93,17 +93,21 @@
             <div class="container-fluid">
 
                 <!-- Display Offcanvas -->
-                <button class="btn ps-0" id="offcanvas-open-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-                    aria-controls="offcanvasMenu"><i class="bi bi-text-left fs-4"></i></button>
+                <button class="btn ps-0" id="offcanvas-open-btn" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu"><i
+                        class="bi bi-text-left fs-4"></i></button>
 
                 <a class="navbar-brand d-inline-flex align-items-center" href="#"><i
                         class="me-2 bi bi-wordpress fs-3"></i> From Noob to Ninja</a>
 
                 <!-- Mobile toggle menu until lg -->
-                <div class="d-lg-none menu-tog">
-                    <span></span>
-                    <span></span>
+                <div class="menu-tog-wrapper">
+                    <div class="d-lg-none menu-tog">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
+
 
                 <!-- Main nav -->
                 <div class="collapse navbar-collapse pt-md-1" id="navbarSupportedContent">
@@ -149,11 +153,40 @@
         </nav>
     </div>
 
+    <main>
+
+        <!-- Hero section -->
+        <section id="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center my-4">
+                        <img src="assets/img/hero-img.png" alt="WordPress HTML5 et Bootstrapp">
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="h5 mb-0 fw-light text-uppercase fw-light opacity-50">WP From Noob to Ninja</p>
+                        <h2 class="display-4 text-uppercase fw-800">Intégrer un template HTML sur WordPress</h2>
+                        <p class="lead">Ceci est la front page du thème, soit la page d'accueil, si vous avez défini une
+                            page d'accueil statique dans les paramètres de lecture de WordPress. Généralement, on crée
+                            une page "accueil" vide dans l'administration, puis on template la page dans front-page.php.
+                        </p>
+                        <p class="fw-bold">Ce template est basé sur Bootstrap 5.</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#!" class="btn btn-primary">Blog</a>
+                                <a href="#!" class="ms-3 btn btn-outline-primary disabled">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer id="display-love" class="container-fluid position-fixed bottom-0 pb-2">
         <div class="row">
             <div class="col-12 text-end">
-            <small>Created with ❤️</small>
-        </div>
+                <small>Created with ❤️</small>
+            </div>
         </div>
     </footer>
 

@@ -72,8 +72,12 @@ background: linear-gradient(355deg, rgba(16,22,33,0.55) 25%, rgba(29,38,57,1) 75
     font-size: 8rem;
 }
 
-h1 {
+.offcanvas h1 {
     line-height: 1.8rem !important;
+}
+
+.fw-800 {
+    font-weight: 800;
 }
 
 .deco {

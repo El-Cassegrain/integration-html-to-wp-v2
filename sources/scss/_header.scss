@@ -3,6 +3,7 @@
 /* Header style */
 #main-header {
     z-index: 100;
+    mix-blend-mode: multiply;
     .nav-link {
         cursor: pointer;
     }

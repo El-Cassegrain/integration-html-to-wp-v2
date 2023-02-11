@@ -31,10 +31,11 @@ function animate(){
 
 animate()
 
-
+const toggleButton = document.querySelector('.menu-tog-wrapper');
 let menuToggle = document.querySelector('.menu-tog');
+let menuWrapper = document.querySelector('.wrapper');
 let nav = document.querySelector('#mobile-nav');
-menuToggle.addEventListener('click', () => {
+toggleButton.addEventListener('click', () => {
     setTimeout(() => {
         toggle = !toggle;
        
@@ -49,5 +50,6 @@ menuToggle.addEventListener('click', () => {
     }
     
     menuToggle.classList.toggle('active')
+    menuWrapper.classList.toggle('active')
 })
 })
