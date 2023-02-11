@@ -32,6 +32,7 @@ function animate(){
 animate()
 
 const toggleButton = document.querySelector('.menu-tog-wrapper');
+const header = document.querySelector('#main-header');
 let menuToggle = document.querySelector('.menu-tog');
 let menuWrapper = document.querySelector('.wrapper');
 let nav = document.querySelector('#mobile-nav');
@@ -51,5 +52,27 @@ toggleButton.addEventListener('click', () => {
     
     menuToggle.classList.toggle('active')
     menuWrapper.classList.toggle('active')
+    header.classList.toggle('active')
 })
+
+/* Mouse scroll */
+const scrollDownMouse = document.getElementById('scroll-down-mouse')
+const scrollTopBtn = document.getElementById('scroll-top-btn')
+
+window.addEventListener('scroll', function () {
+    scrollFunction();
+});
+
+//Scroll
+function scrollFunction() {
+    if (window.scrollY >= 70) {
+        scrollTopBtn.classList.add('active');
+        scrollDownMouse.classList.add('scrolled');
+    }
+    if (window.scrollY === 0) {
+        scrollTopBtn.classList.remove('active');
+        scrollDownMouse.classList.remove('scrolled');
+    }
+}
+
 })

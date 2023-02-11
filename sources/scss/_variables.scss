@@ -16,3 +16,13 @@ $secondary-font: "Roboto slab", serif;
 /* Utilities */
 $btn-border-radius: 4px;
 $btn-font-weight: 600;
+$header-height: 4.0343rem;
+
+/* Container */
+$container-max-widths: (
+  sm: 540px,
+  md: 600px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

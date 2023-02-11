@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body id="top">
 
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-start bg-offcanvas text-white" tabindex="-1" id="offcanvasMenu"
@@ -86,11 +86,11 @@
     </div>
 
     <!-- Header -->
-    <header id="main-header" class="position-relative">
+    <header id="main-header" class="position-fixed top-0 w-100">
 
         <!-- Navbar expand lg -->
         <nav class="navbar navbar-expand-lg bg-header shadow-sm border-bottom">
-            <div class="container-fluid">
+            <div class="container">
 
                 <!-- Display Offcanvas -->
                 <button class="btn ps-0" id="offcanvas-open-btn" data-bs-toggle="offcanvas"
@@ -137,7 +137,7 @@
     <!-- Mobile menu -->
     <div class="wrapper">
         <svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path class="path" stroke="#ABB1BC" fill="#E1EAFB" stroke-width="3px" vector-effect="non-scaling-stroke"
+            <path class="path" stroke="#101621" fill="#FF5722" stroke-width="3px" vector-effect="non-scaling-stroke"
                 d="M 0 100 L 0 100 100 100 100 100 C 50 100, 50 100, 0 100"></path>
             <animateMotion dur="10s" repeatCount="indefinite">
                 <mpath xlink:href="#path" />
@@ -158,23 +158,25 @@
         <!-- Hero section -->
         <section id="hero-section">
             <div class="container">
-                <div class="row align-items-center align-items-lg-start flex-column flex-lg-row-reverse mt-lg-5 pt-lg-3">
-                    <div class="col-10 col-sm-12 col-md-10 text-center my-4 col-lg-4">
-                        <img src="assets/img/hero-img.png" class="img-fluid" alt="WordPress HTML5 et Bootstrapp">
+                <div
+                    class="row align-items-center align-items-lg-start flex-column flex-lg-row-reverse mt-lg-5 pt-lg-3">
+                    <div class="col-10 col-sm-12 text-center my-4 col-lg-4">
+                        <img src="assets/img/hero-img-lg.svg" alt="WordPress HTML5 et Bootstrapp" id="hero-img">
                     </div>
-                    <div class="col-10 col-sm-12 col-md-10 col-lg-8 col-xxl-7 text-lg-start">
+                    <div class="col-10 col-sm-12 col-lg-8 text-lg-start">
                         <p class="subtitle-h1">WP From Noob to Ninja</p>
-                        <h2 class="display-4 text-uppercase fw-800">Intégrer un template HTML sur WordPress</h2>
+                        <h2 class="display-3 text-uppercase fw-800">Intégrer un template HTML sur WordPress</h2>
                         <p class="lead">Ceci est la front page du thème, soit la page d'accueil, si vous avez défini une
                             page d'accueil statique dans les paramètres de lecture de WordPress.</p>
                         </p>
                         <p class="fw-bold">Ce template est basé sur Bootstrap 5.</p>
                         <div class="row">
-                            <div class="col-10 col-sm-12 col-md-10 mt-lg-2">
+                            <div class="col mt-2">
                                 <a href="#!" class="btn btn-primary">Blog</a>
                                 <a href="#!" class="ms-3 btn btn-outline-secondary disabled position-relative">Portfolio
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-                                    Soon !</span></a>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                                        Soon !</span></a>
                             </div>
                         </div>
                     </div>
@@ -185,25 +187,76 @@
         <!-- Last posts section -->
         <section id="last-posts-section">
             <div class="container">
+
+                <!-- Title -->
                 <div class="row justify-content-center mt-4 mt-lg-5 pt-2 pt-lg-4">
-                    <div class="col-10 col-sm-12 col-md-10 col-lg-12 col-xxl-10">
+                    <div class="col-10 col-sm-12 col-lg-12">
                         <h2 class="mb-0 fw-bold">Derniers articles de blog</h2>
                         <p class="subtitle-h2">Commencez par faire un tour par là</p>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class="row justify-content-center mt-3">
+                    <div class="col-10 col-sm-12 col-lg-12">
+
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-header-top position-relative">
+                                        <div class="overlay"></div>
+                                        <div class="card-title-wrapper">
+                                            <h3 class="h4 card-title">Bien débuter</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="h5 fw-bold mt-1">Paramétrer son projet</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
 
         </section>
+
+        <footer id="display-love" class="container-fluid pb-2">
+            <div class="row">
+                <div class="col-12 text-end">
+                    <small>Created with ❤️</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll down mouse wheel-->
+        <div class="row fixed-bottom text-center pb-5 d-none d-md-flex" aria-hidden="true" id="scroll-down-mouse">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="45" viewBox="0 0 28 45">
+                <g id="mouse" fill="none" stroke="#969696" stroke-width="1">
+                    <rect width="28" height="45" rx="14" stroke="none" />
+                    <rect x="0.5" y="0.5" width="27" height="44" rx="13.5" fill="none" />
+                </g>
+                <ellipse id="mouse-wheel" cx="5.5" cy="6.5" rx="5.5" ry="6.5" fill="#969696" />
+            </svg>
+    
+            <small class="pt-1"><i>Scroll</i></small>
+        </div>
+
+        <!-- Go on top -->
+        <a id="scroll-top-btn" href="#top" class="btn btn-outline-primary"><i class="fs-4 bi bi-chevron-double-up"></i></a>
     </main>
 
-    <footer id="display-love" class="container-fluid position-fixed bottom-0 pb-2">
-        <div class="row">
-            <div class="col-12 text-end">
-                <small>Created with ❤️</small>
-            </div>
-        </div>
-    </footer>
+
+    
+
+
 
     <!-- Vendor scripts -->
     <script src="sources/js/bootstrap.bundle.min.js"></script>

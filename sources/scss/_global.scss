@@ -45,6 +45,42 @@ body {
     margin-top: 0;
 }
 
+#scroll-down-mouse {
+    transition: 0.35s 0.012s ease-in-out;
+    &.scrolled {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#mouse-wheel {
+    animation: scroll ease-out 1.65s infinite;
+    position: relative;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(8px, 8px);
+    }
+    100% {
+        transform: translate(8px, 18px);
+        opacity: 0;
+    }
+}
+
+#scroll-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35s 0.012s ease-in-out;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 #offcanvas-open-btn {
     top: 0.25rem;
     z-index: 100;

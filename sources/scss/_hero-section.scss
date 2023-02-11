@@ -1,0 +1,23 @@
+/* Hero section */
+/* Hero section */
+section#hero-section {
+    margin-top: $header-height;
+    min-height: calc(100vh - $header-height);
+}
+
+#hero-img {
+    max-width: 150px;
+}
+
+@media screen and (min-width: 992px) {
+    section#hero-section {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-img {
+        max-width: 280px;
+    }
+}

@@ -2,6 +2,7 @@
 /* Variables */
 /* Fonts */
 /* Utilities */
+/* Container */
 /* Mixins */
 /* Then import all bootstrap scss */
 /*!
@@ -646,7 +647,7 @@ progress {
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 600px;
   }
 }
 @media (min-width: 992px) {
@@ -10813,6 +10814,41 @@ body {
   margin-top: 0;
 }
 
+#scroll-down-mouse {
+  transition: 0.35s 0.012s ease-in-out;
+}
+#scroll-down-mouse.scrolled {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#mouse-wheel {
+  animation: scroll ease-out 1.65s infinite;
+  position: relative;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(8px, 8px);
+  }
+  100% {
+    transform: translate(8px, 18px);
+    opacity: 0;
+  }
+}
+#scroll-top-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s 0.012s ease-in-out;
+}
+#scroll-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 #offcanvas-open-btn {
   top: 0.25rem;
   z-index: 100;
@@ -10899,13 +10935,14 @@ body {
     width: 250px;
   }
 }
+/* Main style */
+/* Header */
 /* Mobile menu */
 /* Button */
 .menu-tog-wrapper {
   padding: 12px 0 12px 12px;
   background-color: transparent;
   position: relative;
-  z-index: 200;
   cursor: pointer;
 }
 
@@ -10948,7 +10985,7 @@ body {
 /* Menu wrapper */
 .wrapper {
   position: fixed;
-  z-index: 99;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -10958,9 +10995,15 @@ body {
   min-height: 100%;
   visibility: hidden;
   transition: 2s;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
 }
 .wrapper.active {
   visibility: visible;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .wrapper > .transition {
@@ -10987,6 +11030,7 @@ nav#mobile-nav {
 nav#mobile-nav a {
   text-decoration: none;
   text-transform: uppercase;
+  color: #FBFCFF;
   display: flex;
   justify-content: center;
   padding: 25px 0;
@@ -11001,17 +11045,83 @@ nav#mobile-nav.active {
 
 /* Header style */
 #main-header {
-  z-index: 100;
-  mix-blend-mode: multiply;
+  z-index: 200;
+  height: 4.0343rem;
 }
 #main-header .nav-link {
   cursor: pointer;
 }
-
-.bg-header {
-  background: linear-gradient(180deg, #E1EAFB, rgba(210, 239, 255, 0.7));
+#main-header.active {
+  mix-blend-mode: multiply;
 }
 
-/* Main style */
+.bg-header {
+  background: rgb(225, 234, 251);
+  background: linear-gradient(180deg, rgb(225, 234, 251) 19%, rgb(225, 234, 251) 68%, rgba(225, 234, 251, 0.9640231092) 84%, rgba(225, 234, 251, 0.9192051821) 100%);
+}
+
+/* Hero section */
+/* Hero section */
+/* Hero section */
+section#hero-section {
+  margin-top: 4.0343rem;
+  min-height: calc(100vh - 4.0343rem);
+}
+
+#hero-img {
+  max-width: 150px;
+}
+
+@media screen and (min-width: 992px) {
+  section#hero-section {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-img {
+    max-width: 280px;
+  }
+}
+/* Home cards */
+.card-header-top {
+  height: 150px;
+  background: url("https://picsum.photos/seed/picsum/500/300") no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.card-header-top .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 38, 57, 0.85);
+  z-index: 1;
+}
+.card-header-top .card-title-wrapper {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  color: #FBFCFF;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card-header-top .card-title-wrapper .card-title {
+  font-weight: 800;
+  position: relative;
+  text-transform: uppercase;
+}
+.card-header-top .card-title-wrapper .card-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-bottom: 1px dashed #FBFCFF;
+  width: 100%;
+  height: 1px;
+}
 
 /*# sourceMappingURL=style.css.map */

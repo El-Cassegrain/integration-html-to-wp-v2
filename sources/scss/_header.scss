@@ -2,12 +2,17 @@
 
 /* Header style */
 #main-header {
-    z-index: 100;
-    mix-blend-mode: multiply;
+    z-index: 200;
+    height: $header-height;
     .nav-link {
         cursor: pointer;
     }
+    &.active {
+        mix-blend-mode: multiply;
+    }
 }
+
 .bg-header {
-    background: linear-gradient(180deg, #E1EAFB, rgba(210,239,255,0.7));
+    background: rgb(225, 234, 251);
+    background: linear-gradient(180deg, rgba(225, 234, 251, 1) 19%, rgba(225, 234, 251, 1) 68%, rgba(225, 234, 251, 0.9640231092436975) 84%, rgba(225, 234, 251, 0.9192051820728291) 100%);
 }
