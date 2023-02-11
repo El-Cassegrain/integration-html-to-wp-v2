@@ -1,4 +1,4 @@
-![screenshot repo](https://github.com/El-Cassegrain/integration-html-to-wp-v2/blob/main/screenshot.png?raw=true)
+![screenshot](https://github.com/El-Cassegrain/integration-html-to-wp-v2/blob/main/screenshot.png?raw=true)
 
 # integration-html-to-wp-v2
 
