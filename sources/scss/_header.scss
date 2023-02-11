@@ -1,6 +1,12 @@
 @import "mobile-menu";
 
 /* Header style */
+#main-header {
+    z-index: 100;
+    .nav-link {
+        cursor: pointer;
+    }
+}
 .bg-header {
     background: linear-gradient(180deg, #E1EAFB, rgba(210,239,255,0.7));
 }

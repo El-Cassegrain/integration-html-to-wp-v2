@@ -1,20 +1,5 @@
 /* Mobile menu */
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 2vw;
-    mix-blend-mode:darken;
-}
-
 .menu-tog {
     position: relative;
     z-index: 100;
