@@ -1,3 +1,5 @@
+![screenshot repo](https://github.com/El-Cassegrain/integration-html-to-wp-v2/blob/main/screenshot.png?raw=true)
+
 # integration-html-to-wp-v2
 
 Ce repo est utilisé pour créer une maquette statique qui sera portée plus tard sur WordPress à travers un thème sur mesure.
