@@ -1,0 +1,20 @@
+/* Mixins */
+@mixin btn {
+    text-transform: uppercase;
+    font-weight: medium;
+}
+
+@mixin btn-primary {
+    @include btn;
+    color: $light;
+    &:hover, &:focus {
+        color: $white;
+    }
+}
+
+@mixin btn-outline-primary {
+    @include btn;
+    &:hover, &:focus {
+        color: $white
+    }
+}

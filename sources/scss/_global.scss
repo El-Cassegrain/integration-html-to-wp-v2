@@ -1,0 +1,119 @@
+@import "variables";
+@import "mixins";
+
+/* Then import all bootstrap scss */
+@import "bootstrap/bootstrap";
+
+/* Global styles */
+*::selection {
+    background-color: pink;
+    color: #000
+}
+
+body {
+    font-family: $main-font;
+    color: $dark;
+    background: $white url("../../assets/img/skull-wp.svg") no-repeat;
+    background-position: top -73px right -20%;
+    background-attachment: fixed;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    @include btn-primary;
+}
+
+.btn-outline-primary {
+    @include btn-outline-primary
+}
+
+#offcanvas-open-btn {
+    top: 0.25rem;
+    z-index: 100;
+    border: none;
+    transition: 0.35s;
+    &:focus, &:hover {
+        border: none;
+        color: $primary;
+    }
+}
+
+#slogan {
+    top: 1.5rem
+}
+
+
+
+/* Offcanvas */
+.bg-offcanvas {
+    
+background: rgb(16,22,33);
+background: linear-gradient(355deg, rgba(16,22,33,0.55) 25%, rgba(29,38,57,1) 75%), url("../img/dark-honeycomb.png");
+}
+
+#logo-offcanvas {
+    width: 180px;
+}
+
+.offcanvas {
+    max-width: 456px;
+}
+
+.offcanvas .btn-close-offcanvas {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+#main-logo {
+    font-size: 8rem;
+}
+
+h1 {
+    line-height: 1.8rem !important;
+}
+
+.deco {
+    position: relative;
+    &::before, &::after {
+        content: "";
+        border-top: 1px solid rgba($dark, 0.76);
+        width: 38%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+    }
+    &::after {
+        right: 0;
+    }
+    &::before {
+        left: 0;
+    }
+}
+
+#copyright {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("../img/skull-wp-sm.svg");
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .offcanvas {
+        max-width: 348px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #logo-offcanvas {
+        width: 250px;
+    }
+}
