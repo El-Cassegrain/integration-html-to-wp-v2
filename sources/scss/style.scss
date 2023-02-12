@@ -10,7 +10,7 @@
 
 /* Home cards */
 .card-header-top {
-    height: 150px;
+    height: 200px;
     background: url('https://picsum.photos/seed/picsum/500/300') no-repeat;
     background-size: cover;
     width: 100%;
@@ -47,4 +47,9 @@
             }
         }
     }
+}
+
+.btn-card {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }

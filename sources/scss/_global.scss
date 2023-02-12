@@ -18,6 +18,14 @@ body {
     background-attachment: fixed;
 }
 
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+.text-gray {
+    color: $gray;
+}
+
 .btn {
     text-transform: uppercase;
 }

@@ -69,7 +69,7 @@
                             fonctionnel grâce au moteur du plus fameux des CMS.
                         </p>
                         <h2 class="fs-6 pt-3 pb-4 fw-normal">Devenez un expert de la création de thèmes !</h2>
-                        <a href="https://developer.wordpress.org/reference/" class="btn btn-primary">Dépot GitHub du
+                        <a href="https://github.com/El-Cassegrain/integration-html-to-wp-v2" class="btn btn-primary">Dépot GitHub du
                             projet<i class="ms-3 bi bi-github"></i></a>
 
                         <footer>
@@ -125,7 +125,7 @@
                             <a class="nav-link px-3 disabled">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 me-2">Crédits</a>
+                            <a class="nav-link px-3 me-3">Crédits</a>
                         </li>
                     </ul>
                     <a class="btn btn-outline-dark"><i class="bi bi-envelope-fill me-2"></i>Contact</a>
@@ -160,8 +160,8 @@
             <div class="container">
                 <div
                     class="row align-items-center align-items-lg-start flex-column flex-lg-row-reverse mt-lg-5 pt-lg-3">
-                    <div class="col-10 col-sm-12 text-center my-4 col-lg-4">
-                        <img src="assets/img/hero-img-lg.svg" alt="WordPress HTML5 et Bootstrapp" id="hero-img">
+                    <div class="col-10 col-sm-12 text-center text-lg-end my-4 col-lg-4">
+                        <img src="assets/img/hero-img-lg.svg" alt="WordPress HTML5 et Bootstrapp" id="hero-img" class="img-fluid">
                     </div>
                     <div class="col-10 col-sm-12 col-lg-8 text-lg-start">
                         <p class="subtitle-h1">WP From Noob to Ninja</p>
@@ -201,22 +201,82 @@
                     <div class="col-10 col-sm-12 col-lg-12">
 
                         <div class="row">
+
                             <!-- Card 1 -->
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card">
-                                    <div class="card-header-top position-relative">
+                                <div class="card shadow">
+                                    <header class="card-header-top position-relative">
                                         <div class="overlay"></div>
-                                        <div class="card-title-wrapper">
+                                        <div class="card-title-wrapper p-5">
                                             <h3 class="h4 card-title">Bien débuter</h3>
                                         </div>
 
-                                    </div>
+                                    </header>
                                     <div class="card-body">
                                         <h4 class="h5 fw-bold mt-1">Paramétrer son projet</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <p class="card-text">Découvrez dans cet article, comment bien débuter le templating sur WP : les outils, les paramètres à régler et les plugins qui vont vous faciliter la vie.</p>
+                                        <div class="card-metas">
+                                            <p class="mb-0"><span class="text-gray font-secondary me-1">Catégorie :</span><a href="#!">WordPress</a>
+                                            </p>
+                                            <p><span class="text-gray font-secondary me-1">Publié le :</span><span class="text-gray">09/02/2023</span> 
+                                            </p>
+                                        </div>
                                     </div>
+                                    <footer class="footer-card-bottom position-relative">
+                                        <a href="#" class="d-flex py-3 justify-content-center align-items-center btn btn-primary btn-card">Lire la suite<i class="ms-3 bi bi-arrow-right text-white"></i></a>
+                                    </footer>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card shadow">
+                                    <header class="card-header-top position-relative">
+                                        <div class="overlay"></div>
+                                        <div class="card-title-wrapper p-5">
+                                            <h3 class="h4 card-title">Le template hierarchy</h3>
+                                        </div>
+
+                                    </header>
+                                    <div class="card-body">
+                                        <h4 class="h5 fw-bold mt-1">Le système de template</h4>
+                                        <p class="card-text">Découvrez dans cet article, comment WP utilise les documents présents dans sa racine, et affiche le bon template.</p>
+                                        <div class="card-metas">
+                                            <p class="mb-0"><span class="text-gray font-secondary me-1">Catégorie :</span><a href="#!">WordPress</a>
+                                            </p>
+                                            <p><span class="text-gray font-secondary me-1">Publié le :</span><span class="text-gray">09/02/2023</span> 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <footer class="footer-card-bottom position-relative">
+                                        <a href="#" class="d-flex py-3 justify-content-center align-items-center btn btn-primary btn-card">Lire la suite<i class="ms-3 bi bi-arrow-right text-white"></i></a>
+                                    </footer>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card shadow">
+                                    <header class="card-header-top position-relative">
+                                        <div class="overlay"></div>
+                                        <div class="card-title-wrapper p-5">
+                                            <h3 class="h4 card-title">WordPress Loop</h3>
+                                        </div>
+
+                                    </header>
+                                    <div class="card-body">
+                                        <h4 class="h5 fw-bold mt-1">La Boucle</h4>
+                                        <p class="card-text">Découvrez dans cet article, comment WordPress utilise son système de boucle pour afficher les bons éléments.</p>
+                                        <div class="card-metas">
+                                            <p class="mb-0"><span class="text-gray font-secondary me-1">Catégorie :</span><a href="#!">WordPress</a>
+                                            </p>
+                                            <p><span class="text-gray font-secondary me-1">Publié le :</span><span class="text-gray">09/02/2023</span> 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <footer class="footer-card-bottom position-relative">
+                                        <a href="#" class="d-flex py-3 justify-content-center align-items-center btn btn-primary btn-card">Lire la suite<i class="ms-3 bi bi-arrow-right text-white"></i></a>
+                                    </footer>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +297,7 @@
         </footer>
 
         <!-- Scroll down mouse wheel-->
-        <div class="row fixed-bottom text-center pb-5 d-none d-md-flex" aria-hidden="true" id="scroll-down-mouse">
+        <div class="row fixed-bottom text-center pb-5 d-none d-lg-flex" aria-hidden="true" id="scroll-down-mouse">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="45" viewBox="0 0 28 45">
                 <g id="mouse" fill="none" stroke="#969696" stroke-width="1">
                     <rect width="28" height="45" rx="14" stroke="none" />
