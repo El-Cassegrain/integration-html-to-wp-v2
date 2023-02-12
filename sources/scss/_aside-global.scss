@@ -1,0 +1,55 @@
+/* Offcanvas */
+.bg-offcanvas {
+
+    background: rgb(16, 22, 33);
+    background: linear-gradient(355deg, rgba(16, 22, 33, 0.55) 25%, rgba(29, 38, 57, 1) 75%), url("../img/dark-honeycomb.png");
+}
+
+#logo-offcanvas {
+    width: 180px;
+}
+
+.offcanvas {
+    max-width: 456px;
+}
+
+.offcanvas .btn-close-offcanvas {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+#main-logo {
+    font-size: 8rem;
+}
+
+.offcanvas h1 {
+    line-height: 1.8rem !important;
+}
+
+.deco {
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        border-top: 1px solid rgba($dark, 0.76);
+        width: 38%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+    }
+
+    &::after {
+        right: 0;
+    }
+
+    &::before {
+        left: 0;
+    }
+}
+
+#copyright {
+    font-size: 13px;
+    font-weight: lighter;
+}

@@ -18,3 +18,16 @@
         color: $white
     }
 }
+
+@mixin big-link {
+    color: $secondary;
+    font-size: 1.35rem;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    i {
+        padding-top: 0.25rem;
+        color: dark;
+        margin-left: 1rem;
+    }
+}

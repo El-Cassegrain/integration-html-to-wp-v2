@@ -26,6 +26,10 @@ body {
     color: $gray;
 }
 
+.big-link {
+    @include big-link;
+}
+
 .btn {
     text-transform: uppercase;
 }
@@ -55,6 +59,7 @@ body {
 
 #scroll-down-mouse {
     transition: 0.35s 0.012s ease-in-out;
+
     &.scrolled {
         opacity: 0;
         visibility: hidden;
@@ -70,6 +75,7 @@ body {
     0% {
         transform: translate(8px, 8px);
     }
+
     100% {
         transform: translate(8px, 18px);
         opacity: 0;
@@ -78,88 +84,21 @@ body {
 
 #scroll-top-btn {
     position: fixed;
+    z-index: 100;
     bottom: 35px;
     right: 12px;
     opacity: 0;
     visibility: hidden;
     transition: 0.35s 0.012s ease-in-out;
+
     &.active {
         opacity: 1;
         visibility: visible;
     }
 }
 
-#offcanvas-open-btn {
-    top: 0.25rem;
-    z-index: 100;
-    border: none;
-    transition: 0.35s;
-    &:focus, &:hover {
-        border: none;
-        color: $primary;
-    }
-}
-
-#slogan {
-    top: 1.5rem
-}
-
-
-
-/* Offcanvas */
-.bg-offcanvas {
-    
-background: rgb(16,22,33);
-background: linear-gradient(355deg, rgba(16,22,33,0.55) 25%, rgba(29,38,57,1) 75%), url("../img/dark-honeycomb.png");
-}
-
-#logo-offcanvas {
-    width: 180px;
-}
-
-.offcanvas {
-    max-width: 456px;
-}
-
-.offcanvas .btn-close-offcanvas {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-}
-
-#main-logo {
-    font-size: 8rem;
-}
-
-.offcanvas h1 {
-    line-height: 1.8rem !important;
-}
-
 .fw-800 {
     font-weight: 800;
-}
-
-.deco {
-    position: relative;
-    &::before, &::after {
-        content: "";
-        border-top: 1px solid rgba($dark, 0.76);
-        width: 38%;
-        height: 1px;
-        position: absolute;
-        top: 50%;
-    }
-    &::after {
-        right: 0;
-    }
-    &::before {
-        left: 0;
-    }
-}
-
-#copyright {
-    font-size: 13px;
-    font-weight: lighter;
 }
 
 @media screen and (max-width: 767px) {
