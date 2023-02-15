@@ -49,7 +49,21 @@
     }
 }
 
+#btn-depot {
+    box-shadow: 0 0 16px 2px rgba($primary, 0.85);
+    animation: shadow-light ease-in-out 0.9s alternate-reverse infinite;
+}
+
 #copyright {
     font-size: 13px;
     font-weight: lighter;
+}
+
+@keyframes shadow-light {
+    0% {
+        box-shadow: 0 0 8px 0 rgba($primary, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 16px 2px rgba($primary, 0.85);
+    }
 }

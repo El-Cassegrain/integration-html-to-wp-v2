@@ -10806,6 +10806,8 @@ body {
 .btn-primary {
   text-transform: uppercase;
   font-weight: medium;
+  padding-left: 1.65rem;
+  padding-right: 1.65rem;
   color: #E1EAFB;
 }
 .btn-primary:hover, .btn-primary:focus {
@@ -10815,6 +10817,8 @@ body {
 .btn-outline-primary {
   text-transform: uppercase;
   font-weight: medium;
+  padding-left: 1.65rem;
+  padding-right: 1.65rem;
 }
 .btn-outline-primary:hover, .btn-outline-primary:focus {
   color: #FBFCFF;
@@ -10863,6 +10867,8 @@ body {
   bottom: 35px;
   right: 12px;
   opacity: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
   visibility: hidden;
   transition: 0.35s 0.012s ease-in-out;
 }
@@ -10982,9 +10988,13 @@ nav#mobile-nav a {
   color: #FBFCFF;
   display: flex;
   justify-content: center;
-  padding: 25px 0;
+  padding: 20px 20px;
   font-weight: 800;
   font-size: 1.35rem;
+  margin: 6px 0;
+}
+nav#mobile-nav a:first-child {
+  margin-top: 0;
 }
 nav#mobile-nav.active {
   opacity: 1;
@@ -11070,11 +11080,24 @@ nav#mobile-nav.active {
   left: 0;
 }
 
+#btn-depot {
+  box-shadow: 0 0 16px 2px rgba(0, 89, 252, 0.85);
+  animation: shadow-light ease-in-out 0.9s alternate-reverse infinite;
+}
+
 #copyright {
   font-size: 13px;
   font-weight: lighter;
 }
 
+@keyframes shadow-light {
+  0% {
+    box-shadow: 0 0 8px 0 rgba(0, 89, 252, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 16px 2px rgba(0, 89, 252, 0.85);
+  }
+}
 /* Hero section */
 /* Hero section */
 section#hero-section {
@@ -11086,6 +11109,76 @@ section#hero-section {
   max-width: 150px;
 }
 
+.hero-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.hero-img-wrapper .hero-icon {
+  position: absolute;
+  display: block;
+}
+.hero-img-wrapper #wp-icon {
+  top: 0;
+  right: 0;
+  z-index: 10;
+  animation: hero-icon-html ease 10s infinite alternate-reverse;
+}
+.hero-img-wrapper #bs-icon {
+  bottom: 20px;
+  right: 90px;
+  z-index: 20;
+  animation: hero-icon-bs ease 7s infinite alternate-reverse;
+}
+.hero-img-wrapper #html5-icon {
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  animation: hero-icon-html ease 4.2s infinite alternate-reverse;
+}
+
+@keyframes hero-icon-wp {
+  0% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: scale(1) rotate(-12deg);
+  }
+  100% {
+    transform: scale(0.999) rotate(0);
+  }
+}
+@keyframes hero-icon-bs {
+  0% {
+    transform: scale(1.12) rotate(6deg);
+  }
+  80% {
+    transform: scale(1) rotate(-6deg);
+  }
+  100% {
+    transform: scale(0.98) rotate(0);
+  }
+}
+@keyframes hero-icon-html {
+  0% {
+    transform: scale(1.02);
+  }
+  10% {
+    transform: scale(0.997);
+  }
+  25% {
+    transform: scale(1.009);
+  }
+  50% {
+    transform: scale(0.96) rotate(1deg);
+  }
+  75% {
+    transform: scale(1) rotate(0);
+  }
+  100% {
+    transform: scale(1) rotate(3deg);
+  }
+}
 @media screen and (min-width: 576px) {
   #hero-img {
     max-width: 200px;
@@ -11093,7 +11186,7 @@ section#hero-section {
 }
 @media screen and (min-width: 768px) {
   #hero-img {
-    max-width: 280px;
+    max-width: 230px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -11113,7 +11206,7 @@ section#hero-section {
 /* Cards */
 .card-header-top {
   height: 200px;
-  background: url("https://picsum.photos/seed/picsum/500/300") no-repeat;
+  background: url("https://picsum.photos/500/300") no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -11158,6 +11251,63 @@ section#hero-section {
 
 #img-deco {
   max-width: 280px;
+}
+
+.grid-portfolio {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+  grid-template-rows: reapeat(8, auto);
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: 0;
+}
+.grid-item img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item .overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(342deg, #1d2639, rgba(29, 38, 57, 0.68) 100%);
+  z-index: 2;
+  opacity: 0;
+  transition: all ease-in-out 0.2s 0.01s;
+}
+.grid-item .overlay:hover, .grid-item .overlay:focus {
+  opacity: 1;
+}
+
+@media screen and (min-width: 576px) {
+  .grid-portfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid-portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-portfolio {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
