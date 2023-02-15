@@ -65,11 +65,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
             if (!toggle) {
                 nav.classList.add('active');
-    
+
             } else {
                 setTimeout(() => {
                     nav.classList.remove('active')
-    
+
                 }, 250)
             }
 
@@ -99,6 +99,20 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    //portfolio home link focus with tab
+    const portfolioLinks = document.querySelectorAll('.grid-item > .overlay > a')
+
+    for (const link of portfolioLinks) {
+        link.addEventListener('focus', () => {
+            link.parentElement.classList.add('active')
+        })
+        link.addEventListener('blur', () => {
+            link.parentElement.classList.remove('active')
+        })
+
+    }
+
+
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (() => {
         'use strict'
@@ -118,5 +132,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }, false)
         })
     })()
+
+
 
 })
