@@ -31,7 +31,7 @@ body {
 }
 
 .btn {
-    text-transform: uppercase;
+    @include btn;
 }
 
 .btn-primary {

@@ -10801,6 +10801,9 @@ body {
 
 .btn {
   text-transform: uppercase;
+  font-weight: medium;
+  padding-left: 1.65rem;
+  padding-right: 1.65rem;
 }
 
 .btn-primary {
