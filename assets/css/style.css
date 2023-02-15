@@ -10864,17 +10864,21 @@ body {
 #scroll-top-btn {
   position: fixed;
   z-index: 100;
-  bottom: 35px;
+  bottom: 12px;
   right: 12px;
   opacity: 0;
   padding-left: 1rem;
   padding-right: 1rem;
   visibility: hidden;
   transition: 0.35s 0.012s ease-in-out;
+  will-change: auto;
 }
 #scroll-top-btn.active {
   opacity: 1;
   visibility: visible;
+}
+#scroll-top-btn.is-bottom {
+  transform: translateY(-30%);
 }
 
 .fw-800 {
@@ -11292,6 +11296,10 @@ section#hero-section {
 }
 .grid-item .overlay:hover, .grid-item .overlay:focus {
   opacity: 1;
+}
+.grid-item .overlay:hover ~ img, .grid-item .overlay:focus ~ img {
+  transition: all ease-out 0.6s 0.02s;
+  transform: scale(1.12);
 }
 .grid-item .overlay.active {
   opacity: 1;

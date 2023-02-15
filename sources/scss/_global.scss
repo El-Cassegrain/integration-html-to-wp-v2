@@ -85,17 +85,21 @@ body {
 #scroll-top-btn {
     position: fixed;
     z-index: 100;
-    bottom: 35px;
+    bottom: 12px;
     right: 12px;
     opacity: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     visibility: hidden;
     transition: 0.35s 0.012s ease-in-out;
+    will-change: auto;
 
     &.active {
         opacity: 1;
         visibility: visible;
+    }
+    &.is-bottom {
+        transform: translateY(-30%);
     }
 }
 

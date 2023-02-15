@@ -97,7 +97,18 @@ window.addEventListener("DOMContentLoaded", () => {
             scrollTopBtn.classList.remove('active');
             scrollDownMouse.classList.remove('scrolled');
         }
+        
     }
+
+    //At bottom
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            scrollTopBtn.classList.add('is-bottom')
+            console.log('bottom')
+        }else {
+            scrollTopBtn.classList.remove('is-bottom')
+        }
+    };
 
     //portfolio home link focus with tab
     const portfolioLinks = document.querySelectorAll('.grid-item > .overlay > a')
