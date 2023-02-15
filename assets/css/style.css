@@ -10802,15 +10802,11 @@ body {
 .btn {
   text-transform: uppercase;
   font-weight: medium;
-  padding-left: 1.65rem;
-  padding-right: 1.65rem;
 }
 
 .btn-primary {
   text-transform: uppercase;
   font-weight: medium;
-  padding-left: 1.65rem;
-  padding-right: 1.65rem;
   color: #E1EAFB;
 }
 .btn-primary:hover, .btn-primary:focus {
@@ -10820,8 +10816,6 @@ body {
 .btn-outline-primary {
   text-transform: uppercase;
   font-weight: medium;
-  padding-left: 1.65rem;
-  padding-right: 1.65rem;
 }
 .btn-outline-primary:hover, .btn-outline-primary:focus {
   color: #FBFCFF;
