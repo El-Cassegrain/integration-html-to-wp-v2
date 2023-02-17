@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WP - From Noob to Ninja</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" type="image/png">
+
+    <!-- Main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- G fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Urbanist:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- BS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body id="top">
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start bg-offcanvas text-white" tabindex="-1" id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header flex-column mt-3">
+
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                class="btn btn-close-offcanvas text-white" aria-label="Close"><i class="bi bi-x-lg fs-4"></i></button>
+
+            <img src="assets/img/skull-wp-light.svg" alt="Logo Skull WP" id="logo-offcanvas">
+            <div class="title-container position-relative mt-3">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">V2</span>
+                <h1 class="offcanvas-title text-center" id="offcanvasMenuLabel">WordPress <br> <span
+                        class="fs-5 fw-light">From Noob to Ninja</span> </h1>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span class="deco d-flex justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="pe-1 bi bi-star-fill text-dark" viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="ps-0 bi bi-star-fill text-dark" viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="ps-1 bi bi-star-fill text-dark" viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </span>
+                        <p class="lead pt-4">Découvrez comment passer d'une maquette statique, à un prototype pleinement
+                            fonctionnel grâce au moteur du plus fameux des CMS.
+                        </p>
+                        <h2 class="fs-6 pt-3 pb-4 fw-normal">Devenez un expert de la création de thèmes !</h2>
+                        <a href="https://github.com/El-Cassegrain/integration-html-to-wp-v2" class="btn btn-primary"
+                            id="btn-depot" target="_blank">Dépot GitHub du
+                            projet<i class="ms-3 bi bi-github"></i></a>
+
+                        <footer>
+                            <div id="copyright" class="position-absolute w-100 bottom-0 start-50 translate-middle">©
+                                Copyright 2023 |<span class="ms-1 d-inline-flex align-items-center"><a
+                                        href="https://etienneleriche.fr/" target="_blank" class="text-light">Etienne
+                                        Leriche</a></span>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header" class="position-fixed top-0 w-100">
+
+        <!-- Navbar expand lg -->
+        <nav class="navbar navbar-expand-lg bg-header shadow-sm border-bottom">
+            <div class="container position-relative">
+
+                <!-- Display Offcanvas -->
+                <button class="btn ps-0" id="offcanvas-open-btn" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu"><i
+                        class="bi bi-text-left fs-4"></i></button>
+
+                <a class="navbar-brand d-inline-flex align-items-center" href="#"><i
+                        class="me-2 bi bi-wordpress fs-3"></i> From Noob to Ninja</a>
+
+                <!-- Mobile toggle menu until lg -->
+                <div class="menu-tog-wrapper">
+                    <div class="d-lg-none menu-tog">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+
+                <!-- Main nav -->
+                <div class="collapse navbar-collapse pt-md-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="a-propos.html">À propos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-3" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 disabled" href="#!">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 me-3 active" href="credits.html">Crédits</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#contactModal">
+                        <i class="bi bi-envelope-fill me-2"></i>Contact
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="wrapper">
+        <svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="path" stroke="#101621" fill="#FF5722" stroke-width="3px" vector-effect="non-scaling-stroke"
+                d="M 0 100 L 0 100 100 100 100 100 C 50 100, 50 100, 0 100"></path>
+            <animateMotion dur="10s" repeatCount="indefinite">
+                <mpath xlink:href="#path" />
+            </animateMotion>
+        </svg>
+
+        <nav id="mobile-nav">
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="blog.html">Blog</a>
+            <a href="#!">Portfolio</a>
+            <a href="index.html#contact-section">Contact</a>
+            <a href="credits.html">Crédits</a>
+        </nav>
+    </div>
+
+    <main class="pb-5">
+
+        <!-- Crédits -->
+        <section id="credits">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-sm-12 mt-5">
+                        <h1 class="display-3 text-uppercase fw-800">Crédits</h1>
+                        <h2>Merci à :</h2>
+                        <ul>
+                            <li>
+                                AdobeXD pour les maquettes haute fidélité
+                            </li>
+                            <li>
+                                Adobe Illustrator pour le logo Skull WP
+                            </li>
+                            <li>
+                                Les technologies HTML/CSS/JS et le préprocesseur SASS
+                            </li>
+                            <li>
+                                Visual Studio Code l'éditeur moderne et complet
+                            </li>
+                            <li>
+                                Bootstrap 5 et ses superbes icônes
+                            </li>
+                            <li>
+                                Git et GitHub qui héberge ce projet
+                            </li>
+                            <li>
+                                PHP et WordPress dont sa possibilité de thèmes sur mesure
+                            </li>
+                            <li>
+                                Local By Flywheel pour le serveur de développement local
+                            </li>
+                            <li>
+                                Un grand merci à YYYOURS qui me fais confiance pour la gestion du parcours UI Design
+                            </li>
+                            <li>
+                                À ma cafetière <i class="bi bi-cup-hot-fill"></i> qui à passé toutes ces nuits à chauffer
+                            </li>
+                            <li>
+                                À mes supers élèves sans qui je ne serais pas là : <strong>merci à vous</strong>.
+                            </li>
+                        </ul>
+                        <small>À suivre...</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="display-love" class="bg-dark mt-3 text-white container-fluid pb-2 pt-1">
+        <div class="row">
+            <div class="col-12 text-center">
+                <small>Created with ❤️</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll down mouse wheel-->
+    <div class="row fixed-bottom text-center pb-5 d-none d-lg-flex" aria-hidden="true" id="scroll-down-mouse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="45" viewBox="0 0 28 45">
+            <g id="mouse" fill="none" stroke="#969696" stroke-width="1">
+                <rect width="28" height="45" rx="14" stroke="none" />
+                <rect x="0.5" y="0.5" width="27" height="44" rx="13.5" fill="none" />
+            </g>
+            <ellipse id="mouse-wheel" cx="5.5" cy="6.5" rx="5.5" ry="6.5" fill="#969696" />
+        </svg>
+
+        <small class="pt-1"><i>Scroll</i></small>
+    </div>
+
+    <!-- Go on top -->
+    <a id="scroll-top-btn" href="#top" class="btn btn-dark bg-dark border-dark"><i
+            class="fs-4 bi bi-chevron-double-up"></i></a>
+
+    <!-- Modale contact -->
+    <div class="modal" tabindex="-1" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Envie de dire un petit mot ?</h5>
+                    <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="bi bi-x-lg"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Envoyez nous un message !</h6>
+                            </div>
+                        </div>
+                        <!-- Contact form -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+
+
+                                <form action="" novalidate class="needs-validation" id="modal-contact">
+                                    <div class="form-floating mb-3">
+                                        <input required type="text" class="form-control" id="nom"
+                                            aria-describedby="emailHelp" placeholder="Jean Dupont">
+                                        <label for="nom" class="form-label">Prénom/Nom</label>
+                                        <div class="valid-feedback">
+                                            C'est bon !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Veuillez indiquer votre nom.
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input required type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="nom@exemple.com">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <div id="emailHelp" class="form-text">Nous ne spammons pas.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            C'est bon !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer un email valide.
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea required style="height: 130px" class="form-control"
+                                            placeholder="Laissez votre message ici" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Votre message</label>
+                                        <div class="valid-feedback">
+                                            C'est bon !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer un message.
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input required class="form-check-input" type="checkbox" value="cgu"
+                                            id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            J'accèpte les <a href="#!">conditions d'utilisation</a> et la <a href="#!">
+                                                politique de confidentialité</a>.
+                                        </label>
+                                        <div class="valid-feedback">
+                                            C'est bon !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Vous devez accepter les termes.
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center text-lg-end">
+                                            <button type="button" class="btn btn-secondary me-3"
+                                                data-bs-dismiss="modal">Fermer</button>
+                                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor scripts -->
+    <script src="sources/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

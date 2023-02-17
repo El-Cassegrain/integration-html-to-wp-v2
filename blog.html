@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WP - From Noob to Ninja</title>
+    <title>WP - From Noob to Ninja | À propos</title>
 
     <!-- Favicons -->
     <link rel="icon" href="favicon.ico" type="image/ico">
@@ -70,13 +70,13 @@
                         </p>
                         <h2 class="fs-6 pt-3 pb-4 fw-normal">Devenez un expert de la création de thèmes !</h2>
                         <a href="https://github.com/El-Cassegrain/integration-html-to-wp-v2" class="btn btn-primary"
-                            id="btn-depot" target="_blank">Dépot GitHub du
+                            id="btn-depot">Dépot GitHub du
                             projet<i class="ms-3 bi bi-github"></i></a>
 
                         <footer>
                             <div id="copyright" class="position-absolute w-100 bottom-0 start-50 translate-middle">©
                                 Copyright 2023 |<span class="ms-1 d-inline-flex align-items-center"><a
-                                        href="https://etienneleriche.fr/" target="_blank" class="text-light">Etienne Leriche</a></span>
+                                        href="https://etienneleriche.fr/" class="text-light">Etienne Leriche</a></span>
                             </div>
                         </footer>
 
@@ -114,13 +114,13 @@
                 <div class="collapse navbar-collapse pt-md-1" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active px-3" aria-current="page" href="index.html">Accueil</a>
+                            <a class="nav-link px-3" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3" href="a-propos.html">À propos</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link px-3" href="blog.html">Blog</a>
+                            <a class="nav-link px-3 active" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3 disabled" href="#!">Portfolio</a>
@@ -162,38 +162,27 @@
     <main class="pb-5">
 
         <!-- Hero section -->
-        <section id="hero-section">
+        <section id="a-propos">
             <div class="container">
                 <div
                     class="row align-items-center align-items-lg-start flex-column flex-lg-row-reverse mt-lg-5 pt-lg-3">
                     <div class="col-10 text-center col-sm-12 my-4 col-lg-4">
-                        <div class="hero-img-wrapper d-none d-lg-block">
-                            <img id="wp-icon" class="hero-icon" src="assets/img/wp-icon.svg" alt="" aria-hidden="true">
-                            <img id="bs-icon" class="hero-icon" src="assets/img/bs-icon.svg" alt="" aria-hidden="true">
-                            <img id="html5-icon" class="hero-icon" src="assets/img/html5-icon.svg" alt=""
-                                aria-hidden="true">
-                        </div>
-                        <img src="assets/img/hero-img-lg.svg" alt="WordPress HTML5 et Bootstrapp" id="hero-img"
-                            class=" d-lg-none img-fluid">
+                        <i class="bi bi-flower1" style="font-size: 8rem"></i>
                     </div>
                     <div class="col-10 col-sm-12 col-lg-8 text-lg-start">
-                        <p class="subtitle-h1">WP From Noob to Ninja</p>
-                        <h2 class="display-3 text-uppercase fw-800">Intégrer un template HTML sur WordPress</h2>
-                        <p class="lead">Ceci est la front page du thème, soit la page d'accueil, si vous avez défini une
-                            page d'accueil statique dans les paramètres de lecture de WordPress.</p>
+                        <p class="subtitle-h1">Mon journal de bord</p>
+                        <h2 class="display-3 text-uppercase fw-800">Blog</h2>
+                        <p class="lead">Pour des points bonus, je crée des articles de blog sur le déroulement de ce projet.</p>
                         </p>
-                        <p class="fw-bold">Ce template est basé sur Bootstrap 5.</p>
+                        <p class="fw-bold">Cette page doit être la page <code>home.php</code>.</p>
                         <div class="row">
-                            <div class="col mt-2">
-                                <a href="blog.html" class="btn btn-primary btn-lg">Blog</a>
-                                <a href="#!"
-                                    class="ms-3 btn btn-outline-secondary disabled position-relative btn-lg">Portfolio
-                                    <span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-                                        Soon !</span></a>
+                            <div class="col-12">
+                                <a href="#last-posts-section" class="btn btn-outline-primary">Découvrir <i
+                                        class="ms-1 bi bi-arrow-down-short ms-1"></i></a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -205,8 +194,8 @@
                 <!-- Title -->
                 <div class="row justify-content-center justify-content-xl-start mt-5 pt-2 pt-lg-4">
                     <div class="col-10 col-sm-12 col-xl-8">
-                        <h2 class="mb-0 fw-bold">Derniers articles de blog</h2>
-                        <p class="subtitle-h2">Commencez par faire un tour par là</p>
+                        <h2 class="mb-0 fw-bold">Tous les articles</h2>
+                        <p class="subtitle-h2">Du plus ancient au plus récent</p>
                     </div>
 
                     <!-- Home blog link -->
@@ -328,208 +317,6 @@
 
         </section>
 
-        <!-- Last portfolios section -->
-        <section id="last-portfolios-section" class="mt-5 mt-sm-0">
-            <div class="container">
-
-                <!-- Title -->
-                <div class="row justify-content-center justify-content-xl-start mt-5 pt-2 pt-lg-4">
-                    <div class="col-10 col-sm-12 col-xl-8">
-                        <h2 class="mb-0 fw-bold">Dernieres créations</h2>
-                        <p class="subtitle-h2">Réalisation professionnelles & personnelles</p>
-                    </div>
-
-                    <!-- Home blog link -->
-                    <div class="col-4 d-none d-xl-flex justify-content-end">
-                        <a href="#!" class="big-link">Voir plus de créations<i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Cards -->
-                <div class="row justify-content-center mt-3">
-                    <div class="col-10 col-sm-12">
-
-                        <div class="row">
-
-                            <div class="col-12 grid-portfolio">
-
-                                <!-- Crea 1 -->
-                                <div class="grid-item">
-                                    <div class="overlay">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 1</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-                                <!-- Crea 2 -->
-                                <div class="grid-item">
-                                    <div class="overlay">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 2</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-                                <!-- Crea 3 -->
-                                <div class="grid-item">
-                                    <div class="overlay">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 3</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-                                <!-- Crea 4 -->
-                                <div class="grid-item">
-                                    <div class="overlay">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 4</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-                                <!-- Crea 5 -->
-                                <div class="grid-item">
-                                    <div class="overlay">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 5</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-                                <!-- Crea 6 -->
-                                <div class="grid-item">
-                                    <div class="overlay">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 6</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-                                <!-- Crea 7 -->
-                                <div class="grid-item">
-                                    <div class="overlay" tabindex="0">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 7</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-                                <!-- Crea 8 -->
-                                <div class="grid-item">
-                                    <div class="overlay" tabindex="0">
-                                        <h3 class="h4 text-uppercase text-white">Portfolio 8</h3>
-                                        <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
-                                    </div>
-                                    <img src="https://picsum.photos/576/500" alt="">
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-
-        <!-- Contact -->
-        <section class="mt-5 mt-sm-0" id="contact-section">
-            <div class="container">
-
-                <!-- Title -->
-                <div class="row justify-content-center justify-content-xl-start mt-5 pt-2 pt-lg-4">
-                    <div class="col-10 col-sm-12 col-xl-8">
-                        <h2 class="mb-0 fw-bold">Contactez-moi</h2>
-                        <p class="subtitle-h2">Je vous répondrais dès que possible</p>
-                    </div>
-
-                </div>
-
-                <!-- Contact form -->
-                <div class="row justify-content-center mt-3">
-                    <div class="col-10 col-sm-12">
-
-                        <div class="row">
-
-
-                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                                <form action="" novalidate class="needs-validation" id="home-contact">
-                                    <div class="form-floating mb-3">
-                                        <input required type="text" class="form-control" id="nom"
-                                            aria-describedby="emailHelp" placeholder="Jean Dupont">
-                                        <label for="nom" class="form-label">Prénom/Nom</label>
-                                        <div class="valid-feedback">
-                                            C'est bon !
-                                        </div>
-                                        <div class="invalid-feedback">
-                                            Veuillez indiquer votre nom.
-                                        </div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input required type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="nom@exemple.com">
-                                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <div id="emailHelp" class="form-text">Nous ne spammons pas.
-                                        </div>
-                                        <div class="valid-feedback">
-                                            C'est bon !
-                                        </div>
-                                        <div class="invalid-feedback">
-                                            Veuillez entrer un email valide.
-                                        </div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <textarea required style="height: 130px" class="form-control"
-                                            placeholder="Laissez votre message ici" id="floatingTextarea"></textarea>
-                                        <label for="floatingTextarea">Votre message</label>
-                                        <div class="valid-feedback">
-                                            C'est bon !
-                                        </div>
-                                        <div class="invalid-feedback">
-                                            Veuillez entrer un message.
-                                        </div>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input required class="form-check-input" type="checkbox" value="cgu"
-                                            id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            J'accèpte les <a href="#!">conditions d'utilisation</a> et la <a href="#!">
-                                                politique de confidentialité</a>.
-                                        </label>
-                                        <div class="valid-feedback">
-                                            C'est bon !
-                                        </div>
-                                        <div class="invalid-feedback">
-                                            Vous devez accepter les termes.
-                                        </div>
-                                    </div>
-
-                                    <div class="row mt-3">
-                                        <div class="col-12 text-center text-lg-end">
-                                            <button type="submit" class="btn btn-outline-primary">Envoyer</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="d-none d-lg-block col-lg-6 text-center mt-4 mt-lg-0">
-                                <img src="assets/img/hero-img-lg.svg" alt="Logo">
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
     </main>
 
     <!-- Footer -->
@@ -647,6 +434,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+
 
     <!-- Vendor scripts -->
     <script src="sources/js/bootstrap.bundle.min.js"></script>

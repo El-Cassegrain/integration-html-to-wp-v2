@@ -104,7 +104,6 @@ window.addEventListener("DOMContentLoaded", () => {
     window.onscroll = function(ev) {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             scrollTopBtn.classList.add('is-bottom')
-            console.log('bottom')
         }else {
             scrollTopBtn.classList.remove('is-bottom')
         }

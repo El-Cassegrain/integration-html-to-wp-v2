@@ -16,6 +16,10 @@ body {
     background: $white url("../../assets/img/skull-wp.svg") no-repeat;
     background-position: top -73px right -20%;
     background-attachment: fixed;
+    main, section:not(:first-child) {
+        margin-top: $header-height;
+        padding-top: 10px;
+    }
 }
 
 .font-secondary {

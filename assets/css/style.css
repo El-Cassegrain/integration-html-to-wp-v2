@@ -10777,6 +10777,10 @@ body {
   background-position: top -73px right -20%;
   background-attachment: fixed;
 }
+body main, body section:not(:first-child) {
+  margin-top: 4.0343rem;
+  padding-top: 10px;
+}
 
 .font-secondary {
   font-family: "Roboto slab", serif;
