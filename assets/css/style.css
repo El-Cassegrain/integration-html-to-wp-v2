@@ -10840,7 +10840,7 @@ body main, body section:not(:first-child) {
   margin-top: 0;
 }
 
-ol li, ul li {
+ol li, ul li:not(.nav-item) {
   padding-bottom: 1rem;
 }
 
