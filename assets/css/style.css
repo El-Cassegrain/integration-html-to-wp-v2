@@ -10840,6 +10840,10 @@ body main, body section:not(:first-child) {
   margin-top: 0;
 }
 
+ol li, ul li {
+  padding-bottom: 1rem;
+}
+
 #scroll-down-mouse {
   transition: 0.35s 0.012s ease-in-out;
 }
