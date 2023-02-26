@@ -11265,8 +11265,8 @@ section#hero-section {
 .grid-portfolio {
   display: grid;
   gap: 12px;
-  grid-template-columns: 1fr;
-  grid-template-rows: reapeat(8, auto);
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  grid-auto-rows: auto;
 }
 
 .grid-item {
@@ -11308,22 +11308,6 @@ section#hero-section {
 }
 .grid-item .overlay.active {
   opacity: 1;
-}
-
-@media screen and (min-width: 576px) {
-  .grid-portfolio {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 992px) {
-  .grid-portfolio {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .grid-portfolio {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
